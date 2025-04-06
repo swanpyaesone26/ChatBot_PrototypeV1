@@ -31,7 +31,7 @@ The answer with the most word matches is returned.
 To run the chatbot, execute the script and type your question:
 
 ´´´bash
-python university_chatbot_v1.py ´´´
+python university_chatbot_v1.py 
 
 ###Example
 >>> Please enter your question: Where is the registration office?  
