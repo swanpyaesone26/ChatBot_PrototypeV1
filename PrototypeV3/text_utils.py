@@ -61,3 +61,17 @@ def expand_synonyms(query, synonym_dict):
         else:
             expanded_query.append(word)
     return ' '.join(expanded_query)
+
+# Function to filter out stop words from a list of tokens. This is the updated function in Version 3
+def filter_stop_words(tokens, stop_words):
+    """
+    Remove stop words from a list of tokens
+    
+    Args:
+        tokens (list): List of tokenized words
+        stop_words (set): Set of stop words to remove
+        
+    Returns:
+        list: List of tokens without stop words
+    """
+    return [token for token in tokens if token.lower() not in stop_words]
